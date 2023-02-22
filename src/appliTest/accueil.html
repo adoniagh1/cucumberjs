@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page accueil</title>
+</head>
+<body>
+	<h1>Page d'accueil
+  <button onclick="myconnect()" id="connexion">connexion</button>
+</h1>
+<script>
+    
+  // Déclaration d'une fonction
+  function myconnect() {
+    var newUrl = "file:///Users/adonia/workspace/cucumb/cucumberJs/src/appliTest/connect.html"; // URL de destination
+    window.location.href = newUrl ; // Rediriger vers la nouvelle page
+  }
+  </script>
+  <form action="" method="get">
+    <h2>création de compte</h2>
+		<label for="identifiant">* Identifiant :</label>
+		<input type="text" id="identifiant" name="identifiant" required>
+  </br>
+		<br>
+		<label for="motdepasse1">* Mot de passe :</label>
+		<input type="password" id="password1" name="password1" required>
+    </br>
+  
+    <br>
+    <label for="motdepasse2">* Confirmer le Mot de passe :</label>
+		<input type="password" id="password2" name="password2" pattern="^[\s\S]*${password1}[\s\S]*$" required>
+	  </br>
+        <!--
+             
+		<button onclick="myFunction()">connexion</button>
+			  -->
+			
+			
+        </br>
+		<input type="submit" value="créer">
+		
+	</form>
+  
+</body>
+</html>
